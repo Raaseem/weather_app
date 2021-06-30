@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
+import Weather from './components/weather';
+import WeatherRecords from './components/weatherRecords';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mt-2 pd-20">
+        <h2 className="title" style={{ fontSize: "30px", fontWeight: "800" }}><i className="fa fa-cloud"></i>Weather App</h2>
+      </div>
+      <WeatherRecords />
+
     </div>
   );
 }
